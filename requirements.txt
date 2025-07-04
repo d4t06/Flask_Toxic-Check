@@ -1,5 +1,2 @@
 flask
-transformers
-torch
-# pandas
-# scikit-learn
+underthesea

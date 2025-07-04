@@ -1,7 +1,26 @@
+
 ###
 POST http://127.0.0.1:5000/predict
 Content-Type: application/json
 
 {
-    "comment": "Chết đi!"
+    "comment": "Thằng óc chó, nói nhảm hoài!"
+}
+
+
+###
+POST http://127.0.0.1:5000/predict
+Content-Type: application/json
+
+{
+    "comment": "Cũ qué, t thấy nhạt vcl!"
+}
+
+
+###
+POST http://127.0.0.1:5000/predict
+Content-Type: application/json
+
+{
+    "comment": "Tùy b, t hok care lắm!"
 }
