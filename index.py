@@ -17,7 +17,7 @@ KERNEL_SIZES = [3, 4, 5]
 DROPOUT_RATE = 0.5 # Dropout is typically off during inference, but model expects it during init
 
 # Paths for loading saved assets
-MODEL_PATH = "viet_toxic_comment_model_no_transformers.pth"
+MODEL_PATH = "model.pth"
 VOCAB_PATH = "custom_vocab.json"
 
 # Set device
@@ -122,6 +122,11 @@ except Exception as e:
     logging.error(f"An error occurred loading the model: {e}")
     inference_model = None
 
+
+
+@app.route('/greeting', methods=['GET'])
+def greeting():
+    return 'hello'
 
 
 @app.route('/predict', methods=['POST'])

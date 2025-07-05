@@ -24,7 +24,7 @@ DROPOUT_RATE = 0.5
 MIN_WORD_FREQ = 2
 
 # Paths for saving/loading
-MODEL_PATH = "viet_toxic_comment_model_no_transformers.pth"
+MODEL_PATH = "model.pth"
 VOCAB_PATH = "custom_vocab.json"
 
 # Set device
