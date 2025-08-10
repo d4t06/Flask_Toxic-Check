@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import json
 import logging
 from underthesea import word_tokenize # For Vietnamese word segmentation
@@ -89,6 +90,8 @@ class SimpleCNN(nn.Module):
 
 # --- Flask Backend Service ---
 app = Flask(__name__)
+
+CORS(app, origins=["http://localhost:5173", "https://d4t06.github.io"])
 
 # Global variables for loaded model and tokenizer
 inference_custom_tokenizer = None
